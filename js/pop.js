@@ -43,3 +43,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         });
     });
+
+
+    // 팝업 오픈시 바디 고정
+    document.querySelector('.btn_pop_open').addEventListener('click', function () {
+    document.getElementById('popupLayer').style.display = 'block';
+    document.body.classList.add('popup-open');
+    });
+
+    document.querySelector('.popup-close').addEventListener('click', function () {
+    document.getElementById('popupLayer').style.display = 'none';
+    document.body.classList.remove('popup-open');
+    });

@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 
+body.popup-open {
+  overflow: hidden;
+  height: 100%;
+}
 
 .btn_pop_open {border: 1px solid #3f58d4; background-color: #3f58d4; color: #fff; font-weight: 500; border-radius: 4px; text-align: center; padding: 10px; margin-top: 25px;}
 
@@ -15,16 +19,6 @@
     background: #f5f5f5;
     z-index: 9999;
     padding: 20px;
-}
-
-.popup-content {
-    background: #fff;
-    padding: 30px;
-    max-width: 500px;
-    width: 90%;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    position: relative;
 }
 
 
