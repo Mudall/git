@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+
+
+.btn_pop_open {border: 1px solid #3f58d4; background-color: #3f58d4; color: #fff; font-weight: 500; border-radius: 4px; text-align: center; padding: 10px; margin-top: 25px;}
+
+.popup-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+    z-index: 9999;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.popup-close {
+    margin-top: 20px;
+}

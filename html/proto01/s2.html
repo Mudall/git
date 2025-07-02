@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../css/reset.css" />
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../../css/pop.css" />
 
     <title>2. 로그인 후 화면</title>
 </head>
@@ -63,6 +64,9 @@
                 </a>
             </li>
         </ul>
+
+        <div class="btn_pop_open" role="button" tabindex="0" aria-label="메뉴 검색 열기">메뉴 검색</div>
+
     </section>
 
     <section class="menu-section">
@@ -445,7 +449,15 @@
                 </div>
             </div>
         </details>
-    <script src="js/script.js"></script>
     </section>
+    
+    <section id="popupLayer" class="popup-layer" style="display: none;">
+        <h2 id="popupTitle">팝업 제목</h2>
+        <p>팝업 내용이 들어갑니다.</p>
+        <button type="button" class="popup-close" aria-label="팝업 닫기">닫기</button>
+    </section>
+
+
+    <script src="../../js/pop.js"></script>
 </body>
 </html>
