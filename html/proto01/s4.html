@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../../css/pop.css" />
+
+    <title>2. 로그인 후 화면</title>
+</head>
+<body>
+    <header>
+        <div class="logo-wrap">
+            <div class="logo">고용24</div>
+            <div class="tab-switch">
+                <button class="active">개인</button>
+                <button>기업</button>
+            </div>
+        </div>
+        <button class="close" aria-label="전체메뉴 닫기">닫기</button>
+    </header>
+    
+    <section id="popupLayer" class="popup-layer">
+        <div class="pop_header">
+            <p>메뉴 검색</p>
+            <button type="button" class="popup-close" aria-label="팝업 닫기">닫기</button>
+        </div>
+
+        <div class="pop_search">
+            <input type="text" id="popupSearchInput" name="popupSearch" placeholder="검색어를 입력하세요" />
+            <button type="submit">검색</button>
+        </div>
+
+        <div class="index-container">
+            <nav class="index-buttons" role="navigation" aria-label="색인 목록">
+                <button type="button" data-index="ㄱ" class="active">ㄱ</button>
+                <button type="button" data-index="ㄴ">ㄴ</button>
+                <button type="button" data-index="ㄷ">ㄷ</button>
+                <button type="button" data-index="ㄹ">ㄹ</button>
+                <button type="button" data-index="ㅁ">ㅁ</button>
+                <button type="button" data-index="ㅂ">ㅂ</button>
+                <button type="button" data-index="ㅅ">ㅅ</button>
+                <button type="button" data-index="ㅇ">ㅇ</button>
+                <button type="button" data-index="ㅈ">ㅈ</button>
+                <button type="button" data-index="ㅊ">ㅊ</button>
+                <button type="button" data-index="ㅋ">ㅋ</button>
+                <button type="button" data-index="ㅌ">ㅌ</button>
+                <button type="button" data-index="ㅍ">ㅍ</button>
+                <button type="button" data-index="ㅎ">ㅎ</button>
+                <button type="button" data-index="영어">A</button>
+                <button type="button" data-index="숫자">1</button>
+            </nav>
+
+            <div class="index-wrap">
+                <!-- ㄱ -->
+                <ul class="index-list" data-index-list="ㄱ">
+                    <li>강소기업</li>
+                    <li>개별연장급여 신청</li>
+                    <li>개선 및 제안</li>
+                    <li>개인정보처리방침</li>
+                    <li>개인회원 성명 변경</li>
+                    <li>개인회원 정보 수정</li>
+                    <li>거짓구인광고신고</li>
+                    <li>계좌한도 추가지원 안내</li>
+                    <li>고객센터</li>
+                    <li>고용24 소개</li>
+                    <li>고용24 전자지갑</li>
+                    <li>고용24 활용하기</li>
+                    <li>고용보험 미적용자 출산(유산·사산) 급여 신청</li>
+                    <li>고용서비스우수기관</li>
+                    <li>고용정책</li>
+                    <li>공지사항</li>
+                    <li>관련기관 연락처</li>
+                    <li>관심정보</li>
+                    <li>광역구직활동비 청구</li>
+                    <li>구인신청(상용)</li>
+                    <li>구직관리</li>
+                    <li>구직신청</li>
+                    <li>구직신청관리</li>
+                    <li>구직자취업역량 강화프로그램</li>
+                    <li>구직자취업역량강화프로그램</li>
+                    <li>국가인적자원개발컨소시엄훈련</li>
+                    <li>국민내일배움카드</li>
+                    <li>국민내일배움카드 훈련과정</li>
+                    <li>국민취업지원제도</li>
+                    <li>국취이야기</li>
+                    <li>기간제·파견근로자 출산전후휴가 급여등에 상당하는 금액 신청</li>
+                    <li>기관찾기</li>
+                    <li>기업훈련과정</li>
+                </ul>
+
+                <!-- ㄴ -->
+                <ul class="index-list" data-index-list="ㄴ" hidden>
+                    <li>나의 상담내역</li>
+                    <li>내 전자지갑</li>
+                    <li>내 주변 채용정보</li>
+                    <li>내일배움카드(20년 이전)</li>
+                    <li>노무제공자 출산전후급여등 신청 (예술인)</li>
+                    <li>누락 항목 등 기타 (예시)</li>
+                </ul>
+
+                <!-- ㄷ -->
+                <ul class="index-list" data-index-list="ㄷ" hidden>
+                    <li>도입관리</li>
+                    <li>디지털 아카데미 (K-디지털)</li>
+                    <li>자료실</li>
+                    <li>재정지원일자리사업</li>
+                </ul>
+
+                <!-- ㄹ -->
+                <ul class="index-list" data-index-list="ㄹ" hidden>
+                    <li>맞춤자격정보</li>
+                    <li>맞춤정보</li>
+                    <li>맞춤채용정보</li>
+                    <li>맞춤훈련정보</li>
+                    <li>면접전략</li>
+                    <li>모바일 환경설정</li>
+                </ul>
+
+                <!-- ㅁ -->
+                <ul class="index-list" data-index-list="ㅁ" hidden>
+                    <li>미래내일 일경험</li>
+                    <li>미래내일 일경험 사업</li>
+                    <li>민원신청 현황</li>
+                    <li>민원신청 현황조회</li>
+                    <li>민원처리 알림</li>
+                    <li>마이페이지</li>
+                    <li>마이페이지(개인)</li>
+                    <li>맞춤정보</li>
+                    <li>면접전략</li>
+                </ul>
+
+                <!-- ㅂ -->
+                <ul class="index-list" data-index-list="ㅂ" hidden>
+                    <li>발급 신청</li>
+                    <li>부정행위 신고/신고포상금</li>
+                    <li>부정행위신고</li>
+                    <li>부정행위신고(익명/자진신고)</li>
+                    <li>비밀번호 변경</li>
+                </ul>
+
+                <!-- ㅅ -->
+                <ul class="index-list" data-index-list="ㅅ" hidden>
+                    <li>사이버진로교육센터</li>
+                    <li>사이트 소개</li>
+                    <li>상담내역</li>
+                    <li>상병급여(일반)청구</li>
+                    <li>상병급여(출산시)청구</li>
+                    <li>서비스 소개 및 신청</li>
+                    <li>서비스 수혜이력조회</li>
+                    <li>서비스이력</li>
+                    <li>서식자료실</li>
+                    <li>설문조사</li>
+                    <li>수급기간 연기(변경) 신고</li>
+                    <li>수급자격</li>
+                    <li>수급자격 신청서 인터넷 제출</li>
+                    <li>수급자격 신청자 온라인 교육</li>
+                    <li>수급자격 인정명세서 발급청구</li>
+                    <li>수급자격증 기재사항 변경 신고</li>
+                    <li>수급자격증 재교부 신청</li>
+                    <li>스타훈련교사조회</li>
+                    <li>신고포상급 지급 신청</li>
+                    <li>신청현황</li>
+                    <li>실업급여</li>
+                    <li>실업인정</li>
+                    <li>실업인정 인터넷 신청</li>
+                </ul>
+
+                <!-- ㅇ -->
+                <ul class="index-list" data-index-list="ㅇ" hidden>
+                    <li>알선/입사지원 내역</li>
+                    <li>온라인 수강신청 이력</li>
+                    <li>온라인 취업드림수첩 조회</li>
+                    <li>온라인 취업특강(1차 실업인정 교육 포함)</li>
+                    <li>외국인 고용 민원사무 신청</li>
+                    <li>외국인고용사업주</li>
+                    <li>외국인업무지원</li>
+                    <li>우리학교 취업지원실</li>
+                    <li>우리학교취업지원실 상담</li>
+                    <li>운영기관 찾기</li>
+                    <li>웹 접근성 정책</li>
+                    <li>유관기관 훈련과정</li>
+                    <li>유예·재참여 신청</li>
+                </ul>
+
+                <!-- ㅈ -->
+                <ul class="index-list" data-index-list="ㅈ" hidden>
+                    <li>육아기 근로시간 단축 급여 신청</li>
+                    <li>육아휴직</li>
+                    <li>육아휴직 급여 사후지급금 확인 요청</li>
+                    <li>육아휴직/육아기 근로시간 단축 사용현황</li>
+                    <li>육아휴직급여 신청</li>
+                    <li>육아휴직확인</li>
+                    <li>이력서/자기소개서 관리</li>
+                    <li>이메일주소무단수집거부</li>
+                    <li>이벤트</li>
+                    <li>이용가이드</li>
+                    <li>이용문의</li>
+                    <li>이용안내</li>
+                    <li>이용약관</li>
+                    <li>이주비 청구</li>
+                    <li>이직확인서</li>
+                    <li>인재뱅크신청</li>
+                    <li>인증서 이용안내</li>
+                    <li>일자리 찾기</li>
+                    <li>일자리지원 민원</li>
+                    <li>일자리채움정년지원금</li>
+                    <li>일학습병행과정</li>
+                    <li>일학습병행제</li>
+                </ul>
+
+                <!-- ㅊ -->
+                <ul class="index-list" data-index-list="ㅊ" hidden>
+                    <li>자료실</li>
+                    <li>자소서 작성가이드</li>
+                    <li>자주하는 질문</li>
+                    <li>잡케어</li>
+                    <li>장애인 이용안내</li>
+                    <li>재심사 청구</li>
+                    <li>재정지원일자리사업</li>
+                </ul>
+
+                <!-- ㅋ -->
+                <ul class="index-list" data-index-list="ㅋ" hidden>
+                    <li>K-DT 교강사 신청</li>
+                    <li>K-디지털 아카데미</li>
+                </ul>
+
+                <!-- ㅌ -->
+                <ul class="index-list" data-index-list="ㅌ" hidden>
+                    <li>테마별</li>
+                    <li>통합기업정보</li>
+                    <li>타부처 훈련</li>
+                    <li>트레이닝 관련 기타</li>
+                </ul>
+
+                <!-- ㅍ -->
+                <ul class="index-list" data-index-list="ㅍ" hidden>
+                    <li>프로그램 수동설치 다운로드</li>
+                    <li>피보험자 이직 확인</li>
+                </ul>
+
+                <!-- ㅎ -->
+                <ul class="index-list" data-index-list="ㅎ" hidden>
+                    <li>학과정보</li>
+                    <li>해외취업</li>
+                    <li>홈페이지 운영 정책</li>
+                    <li>홍보배너</li>
+                    <li>홍보자료실</li>
+                    <li>회원 인증서 관리</li>
+                    <li>회원 탈퇴</li>
+                    <li>회원정보관리</li>
+                    <li>훈련 기관·강사</li>
+                </ul>
+
+                <!-- 영어 -->
+                <ul class="index-list" data-index-list="영어" hidden>
+                    <li>AI추천정보</li>
+                    <li>BHA평가검증</li>
+                    <li>BI 소개</li>
+                    <li>e-채용마당</li>
+                    <li>e-채용마당 지원서관리</li>
+                    <li>II유형 취업활동비용 신청</li>
+                    <li>I유형 구촉수당신청</li>
+                    <li>NCS확인강사 신청</li>
+                    <li>OPEN-API</li>
+                    <li>OPEN-API 공지사항</li>
+                    <li>Open-API 소개</li>
+                    <li>STEP 이러닝</li>
+                </ul>
+
+                <!-- 숫자 -->
+                <ul class="index-list" data-index-list="숫자" hidden>
+                    <li>2025 대한민국 채용박람회</li>
+                    <li>4차산업혁명 채용관</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../../js/pop.js"></script>
+</body>
+</html>

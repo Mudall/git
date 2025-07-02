@@ -69,3 +69,7 @@ header button.close {margin-left: 20px; font-size: 0; width: 24px; height: 24px;
 .succes-section p {text-align: center; font-size: 24px; color: #111; font-weight: 600; line-height: 1.3;}
 .succes-section img {width: 100%; height: 100%; object-fit: contain; margin-top: 20px;}
 .succes-section a {text-align: center; background-color: #3f58d4; color: #fff; font-weight: 600; width: 100%; padding: 10px; border-radius: 4px;}
+
+
+/* 팝업 오픈버튼 */
+.btn_pop_open {border: 1px solid #3f58d4; background-color: #3f58d4; color: #fff; font-weight: 500; border-radius: 4px; text-align: center; padding: 10px; margin-top: 25px;}

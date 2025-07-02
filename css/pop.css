@@ -1,13 +1,6 @@
 @charset "UTF-8";
 
 
-body.popup-open {
-  overflow: hidden;
-  height: 100%;
-}
-
-.btn_pop_open {border: 1px solid #3f58d4; background-color: #3f58d4; color: #fff; font-weight: 500; border-radius: 4px; text-align: center; padding: 10px; margin-top: 25px;}
-
 .popup-layer {
     position: fixed;
     top: 0;
@@ -45,4 +38,4 @@ body.popup-open {
 
 #popupLayer .index-wrap {}
 #popupLayer .index-list {}
-#popupLayer .index-list li {}
+#popupLayer .index-list li {padding: 10px 0;}

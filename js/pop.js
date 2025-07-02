@@ -1,26 +1,3 @@
-
-// 팝업 온오프
-document.addEventListener("DOMContentLoaded", function () {
-    const openBtn = document.querySelector(".btn_pop_open");
-    const popup = document.getElementById("popupLayer");
-    const closeBtn = document.querySelector(".popup-close");
-
-    if (openBtn && popup && closeBtn) {
-        openBtn.addEventListener("click", function () {
-            popup.style.display = "block";
-            document.body.style.overflow = "hidden"; // 스크롤 방지
-        });
-
-        closeBtn.addEventListener("click", function () {
-            popup.style.display = "none";
-            document.body.style.overflow = ""; // 스크롤 복원
-        });
-    }
-});
-
-
-
-
 // 색인 검색
     const buttons = document.querySelectorAll('.index-buttons button');
     const lists = document.querySelectorAll('.index-list');
@@ -42,16 +19,4 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
         });
-    });
-
-
-    // 팝업 오픈시 바디 고정
-    document.querySelector('.btn_pop_open').addEventListener('click', function () {
-    document.getElementById('popupLayer').style.display = 'block';
-    document.body.classList.add('popup-open');
-    });
-
-    document.querySelector('.popup-close').addEventListener('click', function () {
-    document.getElementById('popupLayer').style.display = 'none';
-    document.body.classList.remove('popup-open');
     });
