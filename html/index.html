@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -10,11 +11,17 @@
 
     <title>작업물 정리</title>
 </head>
+
 <body>
     <section>
         <h1>모바일 사용성 조사<span>ver. 20250702</span></h1>
 
-        <div class="table">
+        <div class="tab-menu">
+            <button class="active" data-tab="tab1">기본탭</button>
+            <button data-tab="tab2">쉬운메뉴탭</button>
+        </div>
+
+        <div id="tab1" class="tab-content active">
             <table>
                 <thead>
                     <tr>
@@ -25,71 +32,221 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>S1</td>
+                        <td>A-1</td>
                         <td>로그인 전 화면</td>
                         <td><a href="https://mudall.github.io/git/html/proto01/s1.html" target="_blank">바로가기</a></td>
                     </tr>
                     <tr>
-                        <td>S2</td>
+                        <td>A-2</td>
                         <td>로그인 후 화면</td>
                         <td><a href="https://mudall.github.io/git/html/proto01/s2.html" target="_blank">바로가기</a></td>
                     </tr>
                     <tr>
-                        <td>S3</td>
-                        <td>과업성공화면</td>
+                        <td>A-3</td>
+                        <td>과업 성공 화면</td>
                         <td><a href="https://mudall.github.io/git/html/proto01/s3.html" target="_blank">바로가기</a></td>
                     </tr>
                     <tr>
-                        <td>S4-1</td>
-                        <td>메뉴 검색 화면<br>키워드 작성 X</td>
-                        <td><a href="" target="_blank">-</a></td>
+                        <td>A-4-1</td>
+                        <td>메뉴 검색 화면 키워드 작성 X</td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td>S4-2</td>
-                        <td>메뉴 검색 화면<br>키워드 작성 O</td>
-                        <td><a href="" target="_blank"></a></td>
+                        <td>A-4-2</td>
+                        <td>메뉴 검색 화면 키워드 작성 O</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>제목</th>
+                        <th>링크</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B-1</td>
+                        <td>스크롤 전 화면</td>
+                        <td></td>
                     </tr>
                     <tr>
+                        <td>B-2</td>
+                        <td>스크롤 후 (앵커탭 닫힘)</td>
                         <td></td>
-                        <td></td>
-                        <td><a href="" target="_blank"></a></td>
                     </tr>
                     <tr>
+                        <td>B-3</td>
+                        <td>스크롤 후 (앵커탭 열림)</td>
                         <td></td>
-                        <td></td>
-                        <td><a href="" target="_blank"></a></td>
                     </tr>
                     <tr>
+                        <td>B-4</td>
+                        <td>과업 성공 화면</td>
                         <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>제목</th>
+                        <th>링크</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C-1</td>
+                        <td>1Depth / 로그인 전</td>
                         <td></td>
-                        <td><a href="" target="_blank"></a></td>
                     </tr>
                     <tr>
+                        <td>C-2</td>
+                        <td>1Depth / 로그인 후</td>
                         <td></td>
+                    </tr>
+                    <tr>
+                        <td>C-3</td>
+                        <td>2,3Depth 화면</td>
                         <td></td>
-                        <td><a href="" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td>C-4</td>
+                        <td>과업 성공 화면</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="tab2" class="tab-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>제목</th>
+                        <th>링크</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A-1</td>
+                        <td>쉬운메뉴 진입 화면</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A-2</td>
+                        <td>과업 성공 화면</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>제목</th>
+                        <th>링크</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B-1</td>
+                        <td>대상자 선택</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>B-2</td>
+                        <td>주제 선택</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>B-3</td>
+                        <td>메뉴 선택</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>B-4</td>
+                        <td>과업 성공 화면</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>제목</th>
+                        <th>링크</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C-1</td>
+                        <td>쉬운메뉴 진입</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>C-2</td>
+                        <td>ㄱ~ㅎ 목록</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>C-3</td>
+                        <td>과업 성공 화면</td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
 
+    <script>
+        const buttons = document.querySelectorAll('.tab-menu button');
+        const tabs = document.querySelectorAll('.tab-content');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+            buttons.forEach(b => b.classList.remove('active'));
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            button.classList.add('active');
+            document.getElementById(button.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+
     <style>
         section {max-width: 100%; margin: 30px auto; font-family: 'Pretendard'; padding: 0 15px;}
         h1 {font-size: 28px; margin: 0;}
         h1 span {margin-left: 10px; color: #666; font-size: 16px;}
-        table {width: 100%; border-collapse: collapse; margin-top: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+        table {width: 100%; border-collapse: collapse; margin-top: 20px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);}
         thead {background-color: #000; color: #fff;}
         th, td {padding: 12px 15px; border: 1px solid #ddd; text-align: left; text-align: center; font-size: 15px; font-weight: 600;}
         tbody tr:nth-child(even) {background-color: #f9f9f9;}
         tbody tr:hover {background-color: #edeef1;}
-        a {color: blue;  font-weight: 600; font-size: 15px;}
+        a {color: blue; font-weight: 600; font-size: 15px;}
         a:hover {text-decoration: underline;}
+        table th:nth-child(1), table td:nth-child(1) {width: 45px;} /* NO */ 
+        table th:nth-child(2), table td:nth-child(2) {width: auto;}/* 제목 */ 
+        table th:nth-child(3), table td:nth-child(3) {width: 70px;}/* 링크 */ 
+        table:nth-child(1) thead {background-color: #ab0000;}
+        table:nth-child(2) thead {background-color: #017227;}
+        table:nth-child(3) thead {background-color: #001bb6;}
 
-        table th:nth-child(1), table td:nth-child(1) { width: 40px;}   /* NO */
-        table th:nth-child(2), table td:nth-child(2) { width: auto; }   /* 제목 */
-        table th:nth-child(3), table td:nth-child(3) { width: 70px;}   /* 링크 */
-        </style>
+        .tab-menu {display: flex; gap: 10px; margin-top: 20px; } 
+        .tab-menu button {padding: 10px 20px; border: none; background: #eee; cursor: pointer; font-size: 16px; font-weight: 600; } 
+        .tab-menu button.active {background: #111; color: #fff;}
+        .tab-content {display: none; } .tab-content.active {display: block; }
+    </style>
 
 </body>
+
 </html>
