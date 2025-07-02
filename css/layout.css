@@ -73,3 +73,4 @@ header button.close {margin-left: 20px; font-size: 0; width: 24px; height: 24px;
 
 /* 팝업 오픈버튼 */
 .btn_pop_open {border: 1px solid #3f58d4; background-color: #3f58d4; color: #fff; font-weight: 500; border-radius: 4px; text-align: center; padding: 10px; margin-top: 25px;}
+.btn_pop_open a {width: 100%; height: 100%; display: block;}
