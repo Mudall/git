@@ -65,7 +65,7 @@ header button.close {margin-left: 20px; font-size: 0; width: 24px; height: 24px;
 
 /* 과업 성공 */
 .succes-section {position: relative; box-sizing: border-box; width: 100%; height: 100svh; margin: auto; padding: 20px; display: flex; flex-direction: column; justify-content: flex-end; align-items: center;}
-.succes-contents {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.succes-contents {position: absolute; left: 50%; top: 45%; transform: translate(-50%,-50%);}
 .succes-section p {text-align: center; font-size: 24px; color: #111; font-weight: 600; line-height: 1.3;}
 .succes-section img {width: 100%; height: 100%; object-fit: contain; margin-top: 20px;}
 .succes-section a {text-align: center; background-color: #3f58d4; color: #fff; font-weight: 600; width: 100%; padding: 10px; border-radius: 4px;}
