@@ -7,11 +7,14 @@
 .popup-layer {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
+    max-width: 768px;
     height: 100%;
     background: #f5f5f5;
     z-index: 9999;
+    padding: 20px;
 }
 
 .popup-content {
@@ -24,6 +27,28 @@
     position: relative;
 }
 
-.popup-close {
-    margin-top: 20px;
-}
+
+
+
+
+
+
+
+/* 색인 */
+#popupLayer {}
+#popupLayer .pop_header {display: flex; align-items: center; justify-content: space-between;}
+#popupLayer .pop_header p {}
+#popupLayer .pop_header button {}
+
+#popupLayer .pop_search {}
+#popupLayer .pop_search input {}
+#popupLayer .pop_search button {}
+
+#popupLayer .index-container {}
+#popupLayer nav.index-buttons {display: grid; gap: 8px; justify-items: center; grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));}
+#popupLayer .index-buttons button {text-align: center; display: flex; justify-content: center; align-items: center; width: 32px; height: 32px; border: 1px solid #757575; border-radius: 4px;}
+#popupLayer .index-buttons button.active {border: #3f58d4 1px solid; background-color: #3f58d4; color: #fff;}
+
+#popupLayer .index-wrap {}
+#popupLayer .index-list {}
+#popupLayer .index-list li {}
