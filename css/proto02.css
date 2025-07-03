@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
-
-
-.accordion {background-color: #F3F8FF !important;}
+.menu-section .accordion {padding: 0;}
+.menu-section .accordion .menu-button {padding-left: 20px;}
+.menu-section .accordion[open] .menu-button {border-bottom: none; background-color: #f3f8ff;}
+.menu-section .accordion[open] .menu-button::after {display: none;}
+.accordion-content {padding: 0 20px;}
+.menu-section {margin-top: 236px;}
+.user-info { border-bottom: 8px solid #f3f5f6;}
