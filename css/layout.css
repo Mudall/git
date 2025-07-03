@@ -39,7 +39,8 @@ header button.close, header a.close {margin-left: 20px; font-size: 0; width: 24p
 .menu-section .accordion-content * {line-height: 24px; letter-spacing: -0.32px;}
 .menu-section .accordion__section {border-bottom: 1px solid #eee; margin-bottom: 10px; padding-bottom: 10px;}
 .menu-section .accordion__section:last-child {border-bottom: none; margin-bottom: 0;}
-.menu-section .accordion__section.ul-none {margin-bottom: 0;}
+.menu-section .accordion__section.ul-none {margin-bottom: 10px;}
+.menu-section .accordion__section:last-child.ul-none {margin-bottom: 0;} 
 .menu-section .accordion__section.ul-none+.ul-none {margin-top: 10px;}
 .menu-section .accordion__section .acc-tit {width: 100%; display: block; padding: 10px 0; font-size: 16px; color: #333; font-weight: 600;}
 .menu-section .accordion__section>ul>li {list-style: none; position: relative; padding: 0 24px 0 16px; font-size: 16px; color: #333; font-weight: 400;}
