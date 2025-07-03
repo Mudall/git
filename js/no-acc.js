@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // 스크롤 이동
             const dvh = window.innerHeight / 100;
             const offsetTop = targetAccordion.getBoundingClientRect().top + window.scrollY;
-            const scrollTo = offsetTop - (10 * dvh);
+            const scrollTo = offsetTop - (10 * dvh) - 225;
 
             window.scrollTo({
                 top: scrollTo,

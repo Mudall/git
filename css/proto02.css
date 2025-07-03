@@ -3,7 +3,7 @@
 .menu-section .accordion {padding: 0;}
 .menu-section .accordion .menu-button {padding-left: 20px;}
 .menu-section .accordion[open] .menu-button {border-bottom: none; background-color: #f3f8ff;}
-.menu-section .accordion[open] .menu-button::after {display: none;}
+.menu-section .accordion[open] .menu-button::after, .menu-section .accordion .menu-button::after {display: none;}
 .accordion-content {padding: 0 20px;}
 .menu-section {margin-top: 236px;}
 .user-info { border-bottom: 8px solid #f3f5f6;}
@@ -22,5 +22,4 @@
 .toggle a::after {content: ''; position: absolute; font-size: 0; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 24px; height: 24px; background: url('../image/acc-on.svg') no-repeat center / contain;}
 .toggle a.off::after {background: url('../image/acc-off.svg') no-repeat center / contain;}
 .toggle a[hidden] {display: none;}
-
 
