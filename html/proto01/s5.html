@@ -29,7 +29,7 @@
             <button type="submit">검색</button>
         </form>
             
-        <button type="button" class="search-result" id="btnReset">
+        <button type="button" class="search-result" id="btnResetTop">
             <div class="search-result-box">
                 <p>검색 결과 <span class="result-count"></span><span>건</span></p>
             </div>
@@ -260,7 +260,7 @@
 
     <section id="popupFooterBtn">
         <div class="btn-wrap">
-            <button id="btnReset" type="button">초기화</button>
+            <button id="btnResetBottom" type="button">초기화</button>
             <button id="btnClose" type="button"><a href="../proto01/s2.html">닫기</a></button>
         </div>
     </section>
@@ -269,12 +269,22 @@
     <script>
         const input = document.querySelector('input[name="keyword"]');
         const listItems = document.querySelectorAll('.popup_ul li');
-        const btnReset = document.getElementById('btnReset');
+        const btnResetTop = document.getElementById('btnResetTop');
+        const btnResetBottom = document.getElementById('btnResetBottom');
         const countDisplay = document.querySelector('.result-count'); 
 
         function updateCount() {
             const visibleItems = Array.from(listItems).filter(li => !li.hidden);
             countDisplay.textContent = visibleItems.length;
+        }
+
+        function resetSearch() {
+            input.value = '';
+            listItems.forEach(li => {
+                li.hidden = false;
+                li.innerHTML = li.textContent;
+            });
+            updateCount();
         }
 
         // 검색 필터링
@@ -283,11 +293,7 @@
 
             const keyword = input.value.trim();
             if (!keyword) {
-                listItems.forEach(li => {
-                    li.hidden = false;
-                    li.innerHTML = li.textContent;
-                });
-                updateCount();
+                resetSearch();
                 return;
             }
 
@@ -310,17 +316,11 @@
             updateCount();
         });
 
-        // 초기화 버튼
-        btnReset.addEventListener('click', () => {
-            input.value = '';
-            listItems.forEach(li => {
-                li.hidden = false;
-                li.innerHTML = li.textContent;
-            });
-            updateCount();
-        });
+        // 초기화 버튼 (두 개 다 처리)
+        btnResetTop.addEventListener('click', resetSearch);
+        btnResetBottom.addEventListener('click', resetSearch);
 
-        // 페이지 로드 시 초기 카운트
+        // 초기 카운트
         updateCount();
 
     </script>
