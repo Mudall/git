@@ -7,3 +7,25 @@
 .accordion-content {padding: 0 20px;}
 .menu-section {margin-top: 236px;}
 .user-info { border-bottom: 8px solid #f3f5f6;}
+
+
+
+/* 탭 구현 */
+.acc-tab {z-index: 9000; position: fixed; top: 236px; width: 100%; max-width: 768px; padding: 12px 20px; background-color: #fff; }
+.acc-tab ul {display: flex; flex-wrap: wrap; gap: 10px 4px;}
+.acc-tab li {text-align: center; vertical-align: baseline; border: 1px solid #757575; padding: 4px 12px; color: #333; line-height: 24px; border-radius: 9999px;}
+.acc-tab li.active {border: 1px solid var(--main-color); background-color: var(--main-color); color: #fff;}
+
+
+
+
+.acc-tab ul {z-index: 1001; position: relative; max-height: 56px; width: 100%; overflow: hidden; flex-direction: column; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-right: 50px;}
+.acc-tab.open ul {display: flex; max-height: 100%; flex-direction: row; overflow-x: initial; -webkit-overflow-scrolling: initial; padding-right: initial;}
+.acc-dim {position: fixed; width: 100%; max-width: 768px; top: 0; left: 50%; transform: translateX(-50%); bottom: 0; background-color: rgba(0, 0, 0, 0.16); z-index: 1000;}
+.toggle {z-index: 9999; position: absolute; right: 10px; top: 8px; background-color: #fff; box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.85);}
+.toggle a {padding: 20px; font-size: 0; position: relative; width: 24px; height: 24px; display: inline-block;}
+.toggle a::after {content: ''; position: absolute; font-size: 0; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 24px; height: 24px; background: url('../image/acc-on.svg') no-repeat center / contain;}
+.toggle a.off::after {background: url('../image/acc-off.svg') no-repeat center / contain;}
+.toggle a[hidden] {display: none;}
+
+
