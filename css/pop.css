@@ -43,4 +43,4 @@ header#header-type1 .pop_search {top: 52px; z-index: 9999;}
 .popup-s5 .popup_ul {padding: 0 20px 96px 36px;}
 .popup-s5 .popup_ul li {padding: 10px 0; color: #333; }
 .popup-s5 .popup_ul li[hidden] {display: none;}
-.popup-s5 .span_search {color: #e0024b;}
+.popup-s5 .span_search {color: #e0024b; font-weight: 600;}
