@@ -51,14 +51,16 @@ header button.close, header a.close {margin-left: 20px; font-size: 0; width: 24p
 .menu-section .accordion:first-child .accordion__section {padding-bottom: 0; border-bottom: none;}
 .menu-section .accordion:first-child .fav-btn {display: flex; justify-content: center; align-items: center; margin-bottom: 20px; color: var(--main-color); font-weight: 400; font-size: 16px; line-height: 28px; border: 1px solid var(--main-color); width: 100%; text-align: center; border-radius: 4px; padding: 10px 16px;}
 
-.menu-section .accordion:nth-child(1) .menu-button span::before {background-image: url('../image/allmenu_01.svg');}
-.menu-section .accordion:nth-child(2) .menu-button span::before {background-image: url('../image/allmenu_02.svg');}
-.menu-section .accordion:nth-child(3) .menu-button span::before {background-image: url('../image/allmenu_03.svg');}
-.menu-section .accordion:nth-child(4) .menu-button span::before {background-image: url('../image/allmenu_04.svg');}
-.menu-section .accordion:nth-child(5) .menu-button span::before {background-image: url('../image/allmenu_05.svg');}
-.menu-section .accordion:nth-child(6) .menu-button span::before {background-image: url('../image/allmenu_06.svg');}
-.menu-section .accordion:nth-child(7) .menu-button span::before {background-image: url('../image/allmenu_07.svg');}
-.menu-section .accordion:nth-child(8) .menu-button span::before {background-image: url('../image/allmenu_08.svg');}
+
+
+.menu-section details:nth-of-type(1) .menu-button span::before {background-image: url('../image/allmenu_01.svg') !important;}
+.menu-section details:nth-of-type(2) .menu-button span::before {background-image: url('../image/allmenu_02.svg') !important;}
+.menu-section details:nth-of-type(3) .menu-button span::before {background-image: url('../image/allmenu_03.svg') !important;}
+.menu-section details:nth-of-type(4) .menu-button span::before {background-image: url('../image/allmenu_04.svg') !important;}
+.menu-section details:nth-of-type(5) .menu-button span::before {background-image: url('../image/allmenu_05.svg') !important;}
+.menu-section details:nth-of-type(6) .menu-button span::before {background-image: url('../image/allmenu_06.svg') !important;}
+.menu-section details:nth-of-type(7) .menu-button span::before {background-image: url('../image/allmenu_07.svg') !important;}
+.menu-section details:nth-of-type(8) .menu-button span::before {background-image: url('../image/allmenu_08.svg') !important;}
 
 /* 과업 성공 */
 .succes-section {position: relative; box-sizing: border-box; width: 100%; height: 100dvh; margin: auto; padding: 20px; display: flex; flex-direction: column; justify-content: flex-end; align-items: center;}
