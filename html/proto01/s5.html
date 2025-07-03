@@ -29,7 +29,9 @@
             <button type="submit">검색</button>
         </form>
             
-    
+        <div class="search-result">
+            <p>검색 결과 <span class="result-count"></span><span>건</span></p>
+        </div>
 
         <ul class="popup_ul">
             <li><a href="">(국민취업)일경험프로그램</a></li>
@@ -266,45 +268,60 @@
         const input = document.querySelector('input[name="keyword"]');
         const listItems = document.querySelectorAll('.popup_ul li');
         const btnReset = document.getElementById('btnReset');
+        const countDisplay = document.querySelector('.result-count'); 
 
-        // 검색 필터링 (현재 submit 이벤트 처리 참고해서 input 이벤트로 바꾸는 것도 가능)
+        function updateCount() {
+            const visibleItems = Array.from(listItems).filter(li => !li.hidden);
+            countDisplay.textContent = visibleItems.length;
+        }
+
+        // 검색 필터링
         document.querySelector('.pop_search').addEventListener('submit', function (e) {
             e.preventDefault();
 
             const keyword = input.value.trim();
             if (!keyword) {
+                listItems.forEach(li => {
+                    li.hidden = false;
+                    li.innerHTML = li.textContent;
+                });
+                updateCount();
+                return;
+            }
+
+            const lowerKeyword = keyword.toLowerCase();
+
+            listItems.forEach(li => {
+                const text = li.textContent;
+                const lowerText = text.toLowerCase();
+
+                if (lowerText.includes(lowerKeyword)) {
+                    li.hidden = false;
+                    const regex = new RegExp(`(${keyword})`, 'gi');
+                    li.innerHTML = text.replace(regex, `<span class="span_search">$1</span>`);
+                } else {
+                    li.hidden = true;
+                    li.innerHTML = text;
+                }
+            });
+
+            updateCount();
+        });
+
+        // 초기화 버튼
+        btnReset.addEventListener('click', () => {
+            input.value = '';
             listItems.forEach(li => {
                 li.hidden = false;
                 li.innerHTML = li.textContent;
             });
-            return;
-            }
-            const lowerKeyword = keyword.toLowerCase();
-
-            listItems.forEach(li => {
-            const text = li.textContent;
-            const lowerText = text.toLowerCase();
-
-            if (lowerText.includes(lowerKeyword)) {
-                li.hidden = false;
-                const regex = new RegExp(`(${keyword})`, 'gi');
-                li.innerHTML = text.replace(regex, `<span class="span_search">$1</span>`);
-            } else {
-                li.hidden = true;
-                li.innerHTML = text;
-            }
-            });
+            updateCount();
         });
 
-        // 초기화 버튼 이벤트
-        btnReset.addEventListener('click', () => {
-            input.value = '';
-            listItems.forEach(li => {
-            li.hidden = false;
-            li.innerHTML = li.textContent;
-            });
-        });
-        </script>
+        // 페이지 로드 시 초기 카운트
+        updateCount();
+
+    </script>
 
 </body>
 </html>
