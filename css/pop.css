@@ -12,7 +12,7 @@ header .pop_header p {}
 #popupLayer .pop_search input {}
 #popupLayer .pop_search button {}
 
-#popupLayer .index-container {padding-bottom: 96px;}
+#popupLayer .index-container {padding: 0 20px 96px;}
 #popupLayer nav.index-buttons {display: grid; gap: 8px; justify-items: center; grid-template-columns: repeat(8 , 2fr)}
 #popupLayer .index-buttons button {text-align: center; display: flex; justify-content: center; align-items: center; width: 32px; height: 32px; border: 1px solid #757575; border-radius: 4px;}
 #popupLayer .index-buttons button.active {border:  1px solid var(--main-color); background-color: var(--main-color); color: #fff;}
