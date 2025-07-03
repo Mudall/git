@@ -27,7 +27,7 @@
 html {
   font-size: 16px; 
   width: 100%;
-  height: 100svh;
+  height: 100dvh;
   max-width: 768px;
   margin: 0 auto;
   overflow-x: hidden;

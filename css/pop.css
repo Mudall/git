@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+header {height: 48px; padding: 0 20px; }
+
+/* 검색창 */
+.pop_search {position: fixed; top: 48px; padding: 16px 20px; width: 100%; max-width: 768px; gap: 8px; display: flex; align-items: stretch; background-color: #f5f5f5;}
+.pop_search input {width: calc(100% - 68px); height: 48px; padding: 16px 10px; background-color: #fff; border: 1px solid #757575; border-radius: 4px;}
+.pop_search input::placeholder {color: #757575; font-size: 16px;}
+.pop_search button {width: 60px; height: 48px; border: 1px solid var(--main-color); color: #fff; background-color: var(--main-color); line-height: 1; border-radius: 4px;}
 
 
 /* 색인 */
@@ -7,17 +14,13 @@ header .pop_header {width: 100%; display: flex; align-items: center; justify-con
 header .pop_header p {}
 
 
-/* #popupLayer {padding: 20px;} */
-#popupLayer .pop_search {}
-#popupLayer .pop_search input {}
-#popupLayer .pop_search button {}
-
-#popupLayer .index-container {padding: 0 20px 96px;}
-#popupLayer nav.index-buttons {display: grid; gap: 8px; justify-items: center; grid-template-columns: repeat(8 , 2fr)}
+#popupLayer {}
+#popupLayer .index-container {padding: 0 0 96px;}
+#popupLayer nav.index-buttons {top: 128px; width: 100%; max-width: 768px; background-color: #fff; position: fixed; display: grid; gap: 8px; justify-items: center; grid-template-columns: repeat(8 , 2fr); padding: 24px 20px;}
 #popupLayer .index-buttons button {text-align: center; display: flex; justify-content: center; align-items: center; width: 32px; height: 32px; border: 1px solid #757575; border-radius: 4px;}
 #popupLayer .index-buttons button.active {border:  1px solid var(--main-color); background-color: var(--main-color); color: #fff;}
 
-#popupLayer .index-wrap {}
+#popupLayer .index-wrap {padding: 248px 20px 0;}
 #popupLayer .index-list {}
 #popupLayer .index-list li {padding: 10px 0;}
 
@@ -26,4 +29,5 @@ header .pop_header p {}
 #popupFooterBtn .btn-wrap button {width: 100%; height: 48px; border: 1px solid #757575; border-radius: 4px; color: #333;}
 #popupFooterBtn .btn-wrap button#btnClose {border: 1px solid var(--main-color); background-color: var(--main-color); color: #fff;}
 #popupFooterBtn .btn-wrap button#btnClose a {width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
+
 
