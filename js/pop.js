@@ -1,22 +1,40 @@
 // 색인 검색
     const buttons = document.querySelectorAll('.index-buttons button');
     const lists = document.querySelectorAll('.index-list');
+    const title = document.getElementById('indexTitle');
+
+    function updateIndexView(indexKey) {
+        let found = false;
+        lists.forEach(list => {
+            const isTarget = list.dataset.indexList === indexKey;
+            list.hidden = !isTarget;
+            if (isTarget) {
+                const count = list.querySelectorAll('li').length;
+                title.innerHTML = `${indexKey} <span>${count}</span>`;
+                found = true;
+            }
+        });
+
+        if (!found) {
+            title.innerHTML = `${indexKey} <span>0</span>`;
+        }
+    }
 
     buttons.forEach(button => {
         button.addEventListener('click', () => {
-        // 활성 버튼 표시
-        buttons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
 
-        const idx = button.dataset.index;
-
-        // 해당 색인 리스트만 보이게, 나머지 숨기기
-        lists.forEach(list => {
-            if(list.dataset.indexList === idx) {
-            list.hidden = false;
-            } else {
-            list.hidden = true;
-            }
-        });
+            const idx = button.dataset.index;
+            updateIndexView(idx);
         });
     });
+
+    // 초기 활성 상태 자동 실행 (초기화용)
+    document.addEventListener('DOMContentLoaded', () => {
+        const active = document.querySelector('.index-buttons button.active');
+        if (active) {
+            updateIndexView(active.dataset.index);
+        }
+    });
+

@@ -7,6 +7,12 @@
   font-style: normal;
 }
 
+
+:root {
+  --main-color: #3f58d4;
+}
+
+
 *,
 *::before,
 *::after {
@@ -48,6 +54,8 @@ img {
   height: auto;
   display: block;
 }
+
+span {vertical-align: baseline;}
 
 
 button {

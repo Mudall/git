@@ -13,22 +13,13 @@
 </head>
 <body>
     <header>
-        <div class="logo-wrap">
-            <div class="logo">고용24</div>
-            <div class="tab-switch">
-                <button class="active">개인</button>
-                <button>기업</button>
-            </div>
-        </div>
-        <button class="close" aria-label="전체메뉴 닫기">닫기</button>
-    </header>
-    
-    <section id="popupLayer" class="popup-layer">
         <div class="pop_header">
             <p>메뉴 검색</p>
-            <a href="../proto01/s2.html">닫기</a>
+            <a href="../proto01/s2.html" class="close" aria-label="전체메뉴 닫기">닫기</a>
         </div>
+    </header>
 
+    <section id="popupLayer" class="popup-layer">
         <div class="pop_search">
             <input type="text" id="popupSearchInput" name="popupSearch" placeholder="검색어를 입력하세요" />
             <button type="submit">검색</button>
@@ -55,6 +46,8 @@
             </nav>
 
             <div class="index-wrap">
+                <!-- li 카운트 -->
+                <div id="indexTitle" class="index-title"></div> 
                 <!-- ㄱ -->
                 <ul class="index-list" data-index-list="ㄱ">
                     <li>강소기업</li>
@@ -86,9 +79,7 @@
                     <li>구직자취업역량강화프로그램</li>
                     <li>국가인적자원개발컨소시엄훈련</li>
                     <li>국민내일배움카드</li>
-                    <li>국민내일배움카드</li>
                     <li>국민내일배움카드 훈련과정</li>
-                    <li>국민취업지원제도</li>
                     <li>국민취업지원제도</li>
                     <li>국취이야기</li>
                     <li>기간제·파견근로자 출산전후휴가 급여등에 상당하는 금액 신청</li>
@@ -117,7 +108,7 @@
 
                 <!-- ㅁ -->
                 <ul class="index-list" data-index-list="ㅁ" hidden>
-                   <li>마이페이지</li>
+                    <li>마이페이지</li>
                     <li>마이페이지(개인)</li>
                     <li>맞춤자격정보</li>
                     <li>맞춤정보</li>
@@ -196,7 +187,6 @@
                     <li>육아휴직급여 신청</li>
                     <li>육아휴직확인</li>
                     <li>이력서/자기소개서 관리</li>
-                    <li>이력서/자기소개서 관리</li>
                     <li>이메일주소무단수집거부</li>
                     <li>이벤트</li>
                     <li>이용가이드</li>
@@ -264,13 +254,11 @@
                     <li>채용정보</li>
                     <li>채용정보 상세검색</li>
                     <li>채용행사</li>
-                    <li>채용행사</li>
                     <li>청년 디지털 일자리 사업 지원금 부정수급신고</li>
                     <li>청년내일채움공제 운영기관</li>
                     <li>청년내일채움공제 운영기관</li>
                     <li>청년도전지원사업</li>
                     <li>청년도전지원사업</li>
-                    <li>청년성장프로젝트</li>
                     <li>청년성장프로젝트</li>
                     <li>출산전후(유산,사산,배우자,난임치료)휴가 급여신청</li>
                     <li>출산전후휴가확인</li>
@@ -356,6 +344,12 @@
         </div>
     </section>
 
+    <section id="popupFooterBtn">
+        <div class="btn-wrap">
+            <button id="btnReset" type="button">초기화</button>
+            <button id="btnClose" type="button">닫기</button>
+        </div>
+    </section>
 
     <script src="../../js/pop.js"></script>
 </body>
