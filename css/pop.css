@@ -7,7 +7,7 @@ header .pop_header {width: 100%; display: flex; align-items: center; justify-con
 header .pop_header p {}
 
 
-#popupLayer {padding: 20px;}
+/* #popupLayer {padding: 20px;} */
 #popupLayer .pop_search {}
 #popupLayer .pop_search input {}
 #popupLayer .pop_search button {}
@@ -25,4 +25,5 @@ header .pop_header p {}
 #popupFooterBtn .btn-wrap {display: grid; gap: 8px; grid-template-columns: repeat(2,1fr); justify-items: center; align-items: center;}
 #popupFooterBtn .btn-wrap button {width: 100%; height: 48px; border: 1px solid #757575; border-radius: 4px; color: #333;}
 #popupFooterBtn .btn-wrap button#btnClose {border: 1px solid var(--main-color); background-color: var(--main-color); color: #fff;}
+#popupFooterBtn .btn-wrap button#btnClose a {width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
 
