@@ -23,7 +23,6 @@
 #menu-info ul li a .desc {margin-top: 4px;}
 #menu-info ul li a .desc p {font-size: 16px;  font-weight: 400; color: #111; line-height: 28px; letter-spacing: -0.32px;}
 
-
 #menu-info.sec-2 .info-back p::after {background-image: url('../image/easymenu_type2_02.svg');}
 #menu-info.sec-3 .info-back p::after {background-image: url('../image/easymenu_type2_03.svg');}
 #menu-info.sec-4 .info-back p::after {background-image: url('../image/easymenu_type2_04.svg');}
@@ -31,3 +30,14 @@
 #menu-info.sec-6 .info-back p::after {background-image: url('../image/easymenu_type2_06.svg');}
 #menu-info.sec-7 .info-back p::after {background-image: url('../image/easymenu_type2_07.svg');}
 #menu-info.sec-8 .info-back p::after {background-image: url('../image/easymenu_type2_08.svg');}
+
+
+
+#detail-info {margin-top: 126px; padding: 0 20px;}
+#detail-info .detail-back {padding: 16px; background-color: #f3f8ff; border-radius: 12px; display: block;}
+#detail-info .detail-back p {position: relative; padding-left: 34px; font-size: 20px; color: #111; font-weight: 600; line-height: 30px;}
+#detail-info .detail-back p::before {content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: url('../image/ico24_left.svg') no-repeat center / contain; width: 24px; height: 24px; }
+#detail-info ul {padding: 14px 0 20px;}
+#detail-info ul li {position: relative;}
+#detail-info ul li a {padding: 10px 20px; display: block; width: 100%; height: 100%; font-size: 18px; color: #333; font-weight: 400; line-height: 28px; letter-spacing: -0.36px;}
+#detail-info ul li a::before {content: ''; width: 4px; height: 4px; border-radius: 50%; position: absolute; left: 4px; top: 22px; background-color: #ddd; display: block;}
