@@ -3,7 +3,7 @@
 #easy_menu {margin-top: 126px !important; padding: 0 20px 20px;}
 #easy_menu ul {display: flex; flex-direction: column; gap: 16px;}
 #easy_menu ul li {position: relative; background-color: #f5f6f8; border-radius: 12px; padding: 18px 16px; width: 100%;}
-#easy_menu ul li a {position: relative; display: flex; align-items: center; width: 100%; height: 100%; padding-left: 56px; font-size: 18px; color: #111; font-weight: 600;}
+#easy_menu ul li a {position: relative; line-height: 24px; display: flex; align-items: center; width: 100%; height: 100%; padding-left: 56px; font-size: 18px; color: #111; font-weight: 600;}
 #easy_menu ul li a::before {content: ''; width: 40px; height: 40px; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: url('../image/easymenu_01.svg') no-repeat center / contain;}
 
 
