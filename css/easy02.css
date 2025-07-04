@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+#easy_menu {margin-top: 126px !important; padding: 0 20px 20px;}
+#easy_menu ul {display: grid; grid-template-columns: repeat(2,1fr); justify-items: stretch; align-items: center; gap: 8px;}
+#easy_menu ul li {background-color: #f5f6f8; border-radius: 12px;}
+#easy_menu ul li a {padding: 16px 8px; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+#easy_menu ul li a figure {width: 48px; height: 48px;}
+#easy_menu ul li a figure img {width: 100%; height: 100%; object-fit: contain;}
+#easy_menu ul li a p {margin-top: 10px; font-size: 20px; color: #111; font-weight: 600; line-height: 30px;}
+
+
+#menu-info {margin-top: 126px; padding: 0 20px 20px;}
+#menu-info .info-back {background-color: #f5f6f8; padding: 16px; display: block; border-radius: 12px;}
+#menu-info .info-back p {padding-left: 70px; font-size: 20px; color: #111; font-weight: 600; line-height: 30px; position: relative;}
+#menu-info .info-back p::before {content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; background: url('../image/ico24_left.svg') no-repeat center / contain;}
+#menu-info .info-back p::after {content: ''; position: absolute; left: 32px; top: 50%; transform: translateY(-50%); width: 30px; height: 30px; background: url('../image/easymenu_01.svg') no-repeat center / contain;}
+#menu-info ul {margin-top: 24px;}
+#menu-info ul li {position: relative; background-color: #f3f8ff; border-radius: 12px;}
+#menu-info ul li::after {content: ''; position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; background: url('../image/ico24_right.svg') no-repeat center / contain;}
+#menu-info ul li+li {margin-top: 8px;}
+#menu-info ul li a {display: flex; flex-direction: column; padding: 16px 48px 16px 16px;}
+#menu-info ul li a .tit p {font-size: 20px; font-weight: 600; color: #111; line-height: 30px;}
+#menu-info ul li a .desc {margin-top: 4px;}
+#menu-info ul li a .desc p {font-size: 16px;  font-weight: 400; color: #111; line-height: 28px; letter-spacing: -0.32px;}
+
+
+#menu-info.sec-2 .info-back p::after {background-image: url('../image/easymenu_type2_02.svg');}
+#menu-info.sec-3 .info-back p::after {background-image: url('../image/easymenu_type2_03.svg');}
+#menu-info.sec-4 .info-back p::after {background-image: url('../image/easymenu_type2_04.svg');}
+#menu-info.sec-5 .info-back p::after {background-image: url('../image/easymenu_type2_05.svg');}
+#menu-info.sec-6 .info-back p::after {background-image: url('../image/easymenu_type2_06.svg');}
+#menu-info.sec-7 .info-back p::after {background-image: url('../image/easymenu_type2_07.svg');}
+#menu-info.sec-8 .info-back p::after {background-image: url('../image/easymenu_type2_08.svg');}
