@@ -13,7 +13,7 @@
 #menu-info .info-back {background-color: #f5f6f8; padding: 16px; display: block; border-radius: 12px;}
 #menu-info .info-back p {padding-left: 70px; font-size: 20px; color: #111; font-weight: 600; line-height: 30px; position: relative;}
 #menu-info .info-back p::before {content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; background: url('../image/ico24_left.svg') no-repeat center / contain;}
-#menu-info .info-back p::after {content: ''; position: absolute; left: 32px; top: 50%; transform: translateY(-50%); width: 30px; height: 30px; background: url('../image/easymenu_01.svg') no-repeat center / contain;}
+#menu-info .info-back p::after {content: ''; position: absolute; left: 32px; top: 50%; transform: translateY(-50%); width: 30px; height: 30px; background: url('../image/easymenu_type2_01.svg') no-repeat center / contain;}
 #menu-info ul {margin-top: 24px;}
 #menu-info ul li {position: relative; background-color: #f3f8ff; border-radius: 12px;}
 #menu-info ul li::after {content: ''; position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; background: url('../image/ico24_right.svg') no-repeat center / contain;}
