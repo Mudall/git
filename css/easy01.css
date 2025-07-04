@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+#easy_menu {margin-top: 126px !important;}
+#easy_menu ul {display: flex; flex-direction: column; gap: 16px;}
+#easy_menu ul li {position: relative; background-color: #f5f6f8; border-radius: 12px; padding: 12px 16px; width: 100%; height: 64px;}
+#easy_menu ul li a {position: relative; display: flex; align-items: center; width: 100%; height: 100%; padding-left: 56px; font-size: 18px; color: #111; font-weight: 600;}
+#easy_menu ul li a::before {content: ''; width: 40px; height: 40px; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: url('../image/easymenu_01.svg') no-repeat center / contain;}
+
+
+#easy_menu ul li:nth-of-type(2) a::before {background-image: url('../image/easymenu_02.svg');}
+#easy_menu ul li:nth-of-type(3) a::before {background-image: url('../image/easymenu_03.svg');}
+#easy_menu ul li:nth-of-type(4) a::before {background-image: url('../image/easymenu_04.svg');}
+#easy_menu ul li:nth-of-type(5) a::before {background-image: url('../image/easymenu_05.svg');}
+#easy_menu ul li:nth-of-type(6) a::before {background-image: url('../image/easymenu_06.svg');}
+#easy_menu ul li:nth-of-type(7) a::before {background-image: url('../image/easymenu_07.svg');}
+#easy_menu ul li:nth-of-type(8) a::before {background-image: url('../image/easymenu_08.svg');}
+#easy_menu ul li:nth-of-type(9) a::before {background-image: url('../image/easymenu_09.svg');}
+#easy_menu ul li:nth-of-type(10) a::before {background-image: url('../image/easymenu_10.svg');}
