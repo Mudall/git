@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#easy_menu {margin-top: 126px !important;}
+#easy_menu {margin-top: 126px !important; padding: 0 20px 20px;}
 #easy_menu ul {display: flex; flex-direction: column; gap: 16px;}
 #easy_menu ul li {position: relative; background-color: #f5f6f8; border-radius: 12px; padding: 12px 16px; width: 100%; height: 64px;}
 #easy_menu ul li a {position: relative; display: flex; align-items: center; width: 100%; height: 100%; padding-left: 56px; font-size: 18px; color: #111; font-weight: 600;}
