@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#popupLayer nav.index-buttons {top: 48px !important; padding: 16px 20px 24px;}
+#popupLayer .index-wrap {padding: 160px 0 0;}
+.index-list {padding: 0 20px; margin-top: 54px;}
+.index-list li {font-size: 18px;}
+#indexTitle {position: fixed; font-size: 20px !important; font-weight: 600; height: 54px; background-color: #f5f5f5 !important; padding: 12px 20px;}
+#popupFooterBtn .btn-wrap {display: block;}
+
+
+.menu-section {margin-top: 238px; padding-top: 24px;}
+.btn_index {margin-bottom: 10px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between;}
+.btn_index .tit  p {font-size: 20px; color: #111; font-weight: 600; line-height: 30px;}
+.btn_index .btn_link {background-color: #fff; border: 1px solid #757575; border-radius: 9999px;}
+.btn_index .btn_link a {padding: 6px 12px; height: 100%; display: block;}
+.btn_index .btn_link a p {font-size: 14px; font-weight: 400; color: #333; letter-spacing: -0.28px; line-height: 24px;}
+.user-info {border-bottom: 8px solid #F3F5F6;}

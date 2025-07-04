@@ -9,7 +9,7 @@ function updateIndexView(indexKey) {
         list.hidden = !isTarget;
         if (isTarget) {
             const count = list.querySelectorAll('li').length;
-            title.innerHTML = `${indexKey} <span>${count}</span>`;
+            title.innerHTML = `${indexKey} <span>${count}건</span> `;
             found = true;
         }
     });
