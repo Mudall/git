@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../../css/proto03.css" />
+
+    <title>실업급여</title>
+</head>
+<body>
+    <header> 
+        <div class="pop_header">
+            <p>실업급여</p>
+            <a href="../proto03/s2.html" class="close" aria-label="전체메뉴 닫기">닫기</a>
+        </div>
+    </header>
+
+    <section class="menu-section">
+        <details class="accordion">
+            <summary class="menu-button"><span>실업급여</span></summary>
+            <div class="accordion-content">
+                <div class="accordion__section">
+                    <a class="acc-tit" href="#">수급자격</a>
+                    <ul class="acc-ul">
+                        <li><a href="">수급자격 신청자 온라인 교육</a></li>
+                        <li><a href="">수급자격 신청자 인터넷 제출</a></li>
+                        <li><a href="">수급자격증 기재사항 변경 신고</a></li>
+                        <li><a href="">수급기간 연기(변경) 신고</a></li>
+                        <li><a href="">수급자격증 재교부 신청</a></li>
+                        <li><a href="">수급자격 인정명세서 발급청구</a></li>
+                    </ul>
+                </div>
+                <div class="accordion__section">
+                    <a class="acc-tit" href="#">실업인정</a>
+                    <ul class="acc-ul">
+                        <li><a href="">온라인 취업드림수첩 조회</a></li>
+                        <li><a href="">실업인정 인터넷 신청</a></li>
+                        <li><a href="">온라인 취업특강 (1차 실업인정 교육 포함)</a></li>
+                        <li><a href="">취업사실 신고</a></li>
+                        <li><a href="">상병급여(일반)청구</a></li>
+                        <li><a href="">상병급여(출산시)청구</a></li>
+                        <li><a href="">개별연장급여 신청</a></li>
+                    </ul>
+                </div>
+                <div class="accordion__section">
+                    <a class="acc-tit" href="#">취업촉진수당</a>
+                    <ul class="acc-ul">
+                        <li><a href="">조기재취업수당 청구</a></li>
+                        <li><a href="">이주비 청구</a></li>
+                        <li><a href="">광역구직활동비 청구</a></li>
+                    </ul>
+                </div>
+                <div class="accordion__section ul-none">
+                    <a class="acc-tit" href="#">이직확인서</a>
+                </div>
+            </div>
+        </details>
+    </section>
+
+    <section id="popupFooterBtn">
+        <div class="btn-wrap">
+            <button id="btnClose" type="button"><a href="../proto03/s2.html">닫기</a></button>
+        </div>
+    </section>
+
+    <script src="../../js/no-acc.js"></script>
+    <script>
+        document.querySelectorAll('details.accordion').forEach(el => {
+            el.setAttribute('open', true); // 초기 열림 상태 유지
+            el.addEventListener('toggle', () => {
+                if (!el.open) el.open = true; // 닫히려 하면 다시 열기
+            });
+        });
+    </script>
+</body>
+</html>

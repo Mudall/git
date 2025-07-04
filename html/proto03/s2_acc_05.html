@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../../css/proto03.css" />
+
+    <title>출산·육아 휴직</title>
+</head>
+<body>
+    <header>
+        <div class="pop_header">
+            <p>출산 휴가 · 육아 휴직</p>
+            <a href="../proto03/s2.html" class="close" aria-label="전체메뉴 닫기">닫기</a>
+        </div>
+    </header>
+
+    <section class="menu-section">
+        <details class="accordion">
+            <summary class="menu-button"><span>출산 휴가 · 육아 휴직</span></summary>
+            <div class="accordion-content">
+                <div class="accordion__section">
+                    <a class="acc-tit" href="#">출산휴가</a>
+                    <ul class="acc-ul">
+                        <li><a href="">출산전후(유산,사산,배우자,난임치료)휴가 급여신청</a></li>
+                        <li><a href="">기간제·파견근로자 출산전후휴가 급여등에 상당하는 금액 신청</a></li>
+                        <li><a href="">예술인·노무제공자 출산전후급여등 신청</a></li>
+                        <li><a href="">고용보험 미적용자 출산(유산·사산) 급여 신청</a></li>
+                    </ul>
+                </div>
+                <div class="accordion__section">
+                    <a class="acc-tit" href="#">육아휴직</a>
+                    <ul class="acc-ul">
+                        <li><a href="">육아휴직급여 신청</a></li>
+                        <li><a href="">육아기 근로시간 단축 급여 신청</a></li>
+                        <li><a href="">육아휴직/육아기 근로시간 단축 사용현황</a></li>
+                        <li><a href="">육아휴직 급여 사후지급금 확인 요청</a></li>
+                    </ul>
+                </div>
+            </div>
+        </details>
+    </section>
+
+    <section id="popupFooterBtn">
+        <div class="btn-wrap">
+
+            <button id="btnClose" type="button"><a href="../proto03/s2.html">닫기</a></button>
+        </div>
+    </section>
+
+    <script src="../../js/no-acc.js"></script>
+    <script>
+        document.querySelectorAll('details.accordion').forEach(el => {
+            el.setAttribute('open', true); // 초기 열림 상태 유지
+            el.addEventListener('toggle', () => {
+                if (!el.open) el.open = true; // 닫히려 하면 다시 열기
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../../css/proto03.css" />
+
+    <title>채용정보</title>
+</head>
+<body>
+    <header>
+        <div class="pop_header">
+            <p>채용정보</p>
+            <a href="../proto03/s2.html" class="close" aria-label="전체메뉴 닫기">닫기</a>
+        </div>
+    </header>
+
+    <section class="menu-section">
+        <details class="accordion">
+            <summary class="menu-button"><span>채용정보</span></summary>
+            <div class="accordion-content">
+                <div class="accordion__section">
+                    <a class="acc-tit" href="#">일자리 찾기</a>
+                    <ul class="acc-ul">
+                        <li><a href="">채용정보 상세검색</a></li>
+                        <li><a href="">직종별</a></li>
+                        <li><a href="">지역별</a></li>
+                        <li class="li_link"><a>테마별</a></li>
+                        <li class="li_link"><a>4차산업혁명 채용관</a></li>
+                        <li><a href="">통합기업정보</a></li>
+                        <li class="li_link"><a>해외취업</a></li>
+                        <li class="li_link"><a>내 주변 채용정보</a></li>
+                    </ul>
+                </div>
+                <div class="accordion__section">
+                    <a class="acc-tit" href="#">구직신청</a>
+                    <ul class="acc-ul">
+                        <li><a href="">구직신청</a></li>
+                        <li><a href="">이력서/자기소개서 관리</a></li>
+                    </ul>
+                </div>
+                <div class="accordion__section">
+                    <a class="acc-tit" href="#">채용행사</a>
+                    <ul class="acc-ul">
+                        <li><a href="">채용행사</a></li>
+                        <li><a href="">채용박람회</a></li>
+                        <li><a href="">2025 대한민국 채용박람회</a></li>
+                    </ul>
+                </div>
+            </div>
+        </details>
+    </section>
+
+    <section id="popupFooterBtn">
+        <div class="btn-wrap">
+
+            <button id="btnClose" type="button"><a href="../proto03/s2.html">닫기</a></button>
+        </div>
+    </section>
+
+    <script src="../../js/no-acc.js"></script>
+    <script>
+        document.querySelectorAll('details.accordion').forEach(el => {
+            el.setAttribute('open', true); // 초기 열림 상태 유지
+            el.addEventListener('toggle', () => {
+                if (!el.open) el.open = true; // 닫히려 하면 다시 열기
+            });
+        });
+    </script>
+</body>
+</html>

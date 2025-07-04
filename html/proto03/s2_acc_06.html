@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../../css/proto03.css" />
+
+    <title>고객센터</title>
+</head>
+<body>
+    <header>
+        <div class="pop_header">
+            <p>고객센터</p>
+            <a href="../proto03/s2.html" class="close" aria-label="전체메뉴 닫기">닫기</a>
+        </div>
+    </header>
+
+    <section class="menu-section">
+        <details class="accordion">
+            <summary class="menu-button"><span>고객센터</span></summary>
+            <div class="accordion-content">
+                <div class="accordion__section">
+                    <a class="acc-tit" href="#">공지사항</a>
+                    <ul class="acc-ul">
+                        <li><a href="">공지사항</a></li>
+                    </ul>
+                </div>
+                <div class="accordion__section">
+                    <a class="acc-tit" href="#">자료실</a>
+                    <ul class="acc-ul">
+                        <li><a href="">홍보자료실</a></li>
+                        <li><a href="">서식자료실</a></li>
+                    </ul>
+                </div>
+                <div class="accordion__section">
+                    <a class="acc-tit" href="#">이용문의</a>
+                    <ul class="acc-ul">
+                        <li><a href="">질문과 답변</a></li>
+                        <li><a href="">자주하는 질문</a></li>
+                        <li><a href="">개선 및 제안</a></li>
+                    </ul>
+                </div>
+                <div class="accordion__section ul-none">
+                    <a class="acc-tit" href="#">이벤트</a>
+                </div>
+                <div class="accordion__section ul-none">
+                    <a class="acc-tit" href="#">홍보배너</a>
+                </div>
+                <div class="accordion__section">
+                    <a class="acc-tit" href="#">기관찾기</a>
+                    <ul class="acc-ul">
+                        <li><a href="">기관찾기</a></li>
+                    </ul>
+                </div>
+                <div class="accordion__section">
+                    <a class="acc-tit" href="#">심사/재심사청구</a>
+                    <ul class="acc-ul">
+                        <li><a href="">심사 청구</a></li>
+                        <li><a href="">재심사 청구</a></li>
+                    </ul>
+                </div>
+                <div class="accordion__section">
+                    <a class="acc-tit" href="#">부정행위 신고/신고포상금</a>
+                    <ul class="acc-ul">
+                        <li><a href="">부정행위신고</a></li>
+                        <li><a href="">부정행위신고(익명/자진신고)</a></li>
+                        <li><a href="">신고포상금 지급 신청</a></li>
+                    </ul>
+                </div>
+                <div class="accordion__section ul-none">
+                    <a class="acc-tit" href="#">거짓구인광고신고</a>
+                </div>
+            </div>
+        </details> 
+    </section>
+
+    <section id="popupFooterBtn">
+        <div class="btn-wrap">
+
+            <button id="btnClose" type="button"><a href="../proto03/s2.html">닫기</a></button>
+        </div>
+    </section>
+
+    <script src="../../js/no-acc.js"></script>
+    <script>
+        document.querySelectorAll('details.accordion').forEach(el => {
+            el.setAttribute('open', true); // 초기 열림 상태 유지
+            el.addEventListener('toggle', () => {
+                if (!el.open) el.open = true; // 닫히려 하면 다시 열기
+            });
+        });
+    </script>
+</body>
+</html>

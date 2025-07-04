@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../../css/proto03.css" />
+
+    <title>취업지원</title>
+</head>
+<body>
+    <header>
+        <div class="pop_header">
+            <p>취업지원</p>
+            <a href="../proto03/s2.html" class="close" aria-label="전체메뉴 닫기">닫기</a>
+        </div>
+    </header>
+
+    <section class="menu-section">
+        <details class="accordion">
+            <summary class="menu-button"><span>취업지원</span></summary>
+            <div class="accordion-content">
+                <div class="accordion__section">
+                    <a class="acc-tit" href="#">취업역량강화</a>
+                    <ul class="acc-ul">
+                        <li><a href="">구직자취업역량 강화프로그램</a></li>
+                        <li><a href="">중장년내일센터</a></li>
+                        <li><a href="">청년도전지원사업</a></li>
+                        <li><a href="">청년성장프로젝트</a></li>
+                        <li><a href="">직장적응지원</a></li>
+                        <li><a href="">우리학교 취업지원실</a></li>
+                        <li><a href="">재학생 맞춤형 고용서비스</a></li>
+                    </ul>
+                </div>
+                <div class="accordion__section">
+                    <a class="acc-tit" href="../proto03/s3.html">취업가이드</a>
+                    <ul class="acc-ul">
+                        <li><a href="">자소서 작성가이드</a></li>
+                        <li><a href="">직무별 자소서 작성가이드</a></li>
+                        <li><a href="">직업심리검사</a></li>
+                        <li class="li_link"><a>사이버진로교육센터</a></li>
+                        <li><a href="../proto03/s3.html">취업동향 모아보기</a></li>
+                        <li><a href="">취업뉴스</a></li>
+                        <li class="li_link"><a>직업정보</a></li>
+                        <li class="li_link"><a>학과정보</a></li>
+                    </ul>
+                </div>
+                <div class="accordion__section">
+                    <a class="acc-tit" href="#">국민취업지원제도</a>
+                    <ul class="acc-ul">
+                        <li><a href="">국취이야기</a></li>
+                        <li><a href="">취업지원신청</a></li>
+                        <li><a href="">I유형 구촉수당신청</a></li>
+                        <li><a href="">II유형 취업활동비용 신청</a></li>
+                        <li><a href="">유예·재참여 신청</a></li>
+                        <li><a href="">(조기)취업성공 수당 신청</a></li>
+                        <li><a href="">운영기관 찾기</a></li>
+                    </ul>
+                </div>
+                <div class="accordion__section">
+                    <a class="acc-tit" href="#">취업지원금</a>
+                    <ul class="acc-ul">
+                        <li><a href="">청년내일채움공제 운영기관</a></li>
+                    </ul>
+                </div>
+            </div>
+        </details>
+        
+    </section>
+
+    <section id="popupFooterBtn">
+        <div class="btn-wrap">
+
+            <button id="btnClose" type="button"><a href="../proto03/s2.html">닫기</a></button>
+        </div>
+    </section>
+
+    <script src="../../js/no-acc.js"></script>
+    <script>
+        document.querySelectorAll('details.accordion').forEach(el => {
+            el.setAttribute('open', true); // 초기 열림 상태 유지
+            el.addEventListener('toggle', () => {
+                if (!el.open) el.open = true; // 닫히려 하면 다시 열기
+            });
+        });
+    </script>
+</body>
+</html>
