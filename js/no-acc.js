@@ -79,3 +79,42 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+
+
+
+// 클릭시 탭이동
+document.addEventListener('DOMContentLoaded', () => {
+    const accTab = document.querySelector('.acc-tab ul');
+
+    const scrollToActiveTab = () => {
+        const activeItem = accTab.querySelector('li.active');
+        if (activeItem) {
+            const containerLeft = accTab.scrollLeft;
+            const containerWidth = accTab.offsetWidth;
+
+            const itemLeft = activeItem.offsetLeft;
+            const itemWidth = activeItem.offsetWidth;
+
+            // 스크롤 위치 조정: active li가 왼쪽에 붙도록
+            accTab.scrollTo({
+                left: itemLeft,
+                behavior: 'smooth'
+            });
+        }
+    };
+
+    scrollToActiveTab();
+
+    // 탭 클릭 시 active 클래스 변경 + 스크롤 이동
+    const tabItems = accTab.querySelectorAll('li');
+    tabItems.forEach(item => {
+        item.addEventListener('click', e => {
+            e.preventDefault();
+            tabItems.forEach(el => el.classList.remove('active'));
+            item.classList.add('active');
+            scrollToActiveTab();
+        });
+    });
+});
