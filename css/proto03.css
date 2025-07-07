@@ -13,8 +13,8 @@ header .pop_header p {font-size: 18px; color: #111; font-weight: 600;}
 .menu-section {margin-top: 68px; padding-bottom: 96px;}
 .menu-section .accordion .menu-button::after {display: none;}
 .menu-section .accordion summary {pointer-events: none; display: none;}
-.menu-section .accordion__section .acc-tit {color: var(--main-color) !important; margin-bottom: 10px; font-size: 14px !important; font-weight: 400 !important; border-radius: 4px; background-color: #f3f8ff; padding: 4px 16px;}
-.menu-section .accordion__section .acc-tit span {font-size: 14px; font-weight: 600;}
+.menu-section .accordion__section .acc-tit {color: var(--main-color) !important; margin-bottom: 10px; font-size: 14px !important; font-weight: 600 !important; border-radius: 4px; background-color: #f3f8ff; padding: 4px 16px;}
+.menu-section .accordion__section .acc-tit span {font-size: 14px; }
 .menu-section .accordion {border-bottom: initial;}
 #popupFooterBtn {position: fixed; background-color: #fff; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 768px;}
 #popupFooterBtn .btn-wrap {padding: 24px 20px;}
