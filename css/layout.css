@@ -29,7 +29,7 @@ header button.close, header a.close {margin-left: 20px; font-size: 0; width: 24p
 /* 전체메뉴 */
 .menu-section {margin-top: 308px;}
 .menu-section .accordion {border-bottom: 8px solid #f3f5f6; padding: 0 20px;}
-.menu-section .accordion .menu-button {padding: 16px 0; position: relative; list-style: none;}
+.menu-section .accordion .menu-button {cursor: pointer; padding: 16px 0; position: relative; list-style: none;}
 .menu-section .accordion .menu-button::-webkit-details-marker {display: none;}
 .menu-section .accordion .menu-button span {padding-left: 24px; position: relative; font-size: 16px; color: #111; font-weight: 600; line-height: 24px; letter-spacing: -0.32px;}
 .menu-section .accordion .menu-button span::before {content: ''; width: 16px; height: 16px; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background-position: center; background-repeat: no-repeat; background-size: contain;}
@@ -71,9 +71,10 @@ header button.close, header a.close {margin-left: 20px; font-size: 0; width: 24p
 
 
  /* 팝업 오픈버튼 */
-.btn_pop_open {position: fixed; z-index: 9999; width: 100%; max-width: 768px; top: 228px; background-color: #f5f5f5;  padding: 16px 20px;}
-.btn_pop_open a {width: 100%; height: 100%; gap: 8px; display: flex; align-items: stretch;}
-.btn_pop_open a .input {color: #757575; font-size: 16px; line-height: 1;  width: calc(100% - 68px); height: 48px; padding: 16px 10px; background-color: #fff; border: 1px solid #757575; border-radius: 4px;}
-.btn_pop_open a .submit {display: flex; justify-content: center; align-items: center; line-height: 1; width: 60px; height: 48px; border: 1px solid var(--main-color); color: #fff; background-color: var(--main-color); line-height: 1; border-radius: 4px;}
+.btn_pop_open {width: 100%; gap: 8px; display: flex; align-items: stretch; position: fixed; z-index: 9999; width: 100%; max-width: 768px; top: 228px; background-color: #f5f5f5;  padding: 16px 20px;}
+.btn_pop_open .input {color: #333; font-size: 16px; line-height: 1;  width: calc(100% - 68px); height: 48px; padding: 16px 10px; background-color: #fff; border: 1px solid #757575; border-radius: 4px;}
+.btn_pop_open .input::placeholder {color: #757575;}
+.btn_pop_open .submit {width: 60px; height: 48px; border: 1px solid var(--main-color); border-radius: 4px; background-color: var(--main-color);}
+.btn_pop_open .submit a {width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; line-height: 1; color: #fff;  line-height: 1; }
 
 
