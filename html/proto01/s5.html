@@ -281,8 +281,9 @@
         function resetSearch() {
             input.value = '';
             listItems.forEach(li => {
+                const aTag = li.querySelector('a');
                 li.hidden = false;
-                li.innerHTML = li.textContent;
+                aTag.innerHTML = aTag.textContent; 
             });
             updateCount();
         }
