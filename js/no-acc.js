@@ -17,30 +17,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 열기 버튼
-    btnOpen.addEventListener('click', (e) => {
-        e.preventDefault();
-        accTab.classList.add('open');
-        dim.hidden = false;
-        btnOpen.hidden = true;
-        btnClose.hidden = false;
-    });
+btnOpen.addEventListener('click', (e) => {
+    e.preventDefault();
+    accTab.classList.add('open');
+    dim.hidden = false;
+    document.body.style.overflow = 'hidden'; // 스크롤 막기
+    btnOpen.hidden = true;
+    btnClose.hidden = false;
+});
 
-    // 닫기 버튼
-    btnClose.addEventListener('click', (e) => {
-        e.preventDefault();
-        accTab.classList.remove('open');
-        dim.hidden = true;
-        btnOpen.hidden = false;
-        btnClose.hidden = true;
-    });
+// 닫기 버튼
+btnClose.addEventListener('click', (e) => {
+    e.preventDefault();
+    accTab.classList.remove('open');
+    dim.hidden = true;
+    document.body.style.overflow = ''; // 스크롤 허용
+    btnOpen.hidden = false;
+    btnClose.hidden = true;
+});
 
-    // 딤 클릭 시 닫기
-    dim.addEventListener('click', () => {
-        accTab.classList.remove('open');
-        dim.hidden = true;
-        btnOpen.hidden = false;
-        btnClose.hidden = true;
-    });
+// 딤 클릭 시 닫기
+dim.addEventListener('click', () => {
+    accTab.classList.remove('open');
+    dim.hidden = true;
+    document.body.style.overflow = ''; // 스크롤 허용
+    btnOpen.hidden = false;
+    btnClose.hidden = true;
+});
 
     // 탭 클릭 시: active 처리 + 스크롤 이동 + 열림 닫힘 처리
     tabLinks.forEach((link, index) => {
