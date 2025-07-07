@@ -10,7 +10,7 @@ header .logo {font-size: 0; width: 100px; height: 32px; background: url('../imag
 header .tab-switch {margin-left: 8px; display: flex; alig n-items: center; background-color: #eee; border-radius: 9999px;}
 header .tab-switch button {padding: 4px 12px; border-radius: 9999px; font-size: 16px; color: #555; font-weight: 400; line-height: 24px; letter-spacing: -0.32px; background-color: #eee; }
 header .tab-switch button.active {color: #fff; font-weight: 600; background-color: var(--main-color);}
-header button.close, header a.clo e {margin-left: 20px; font-size: 0; width: 24px; height: 24px; background: url('../image/ico24_close.svg') no-repeat center / contain;}
+header button.close, header a.close {margin-left: 20px; font-size: 0; width: 24px; height: 24px; background: url('../image/ico24_close.svg') no-repeat center / contain;}
 header button a {width: 100%; height: 100%; display: block;}
 
 /* 섹션 - 유저 인포 박스 */
