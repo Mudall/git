@@ -16,3 +16,8 @@
 #easy_menu ul li:nth-of-type(8) a::before {background-image: url('../image/easymenu_08.svg');}
 #easy_menu ul li:nth-of-type(9) a::before {background-image: url('../image/easymenu_09.svg');}
 #easy_menu ul li:nth-of-type(10) a::before {background-image: url('../image/easymenu_10.svg');}
+
+
+.menu-section .accordion .menu-button span,
+.menu-section .accordion__section .acc-tit,
+.menu-section .accordion__section>ul>li a {font-size: 18px;}

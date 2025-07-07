@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 #easy_menu {margin-top: 126px !important; padding: 0 20px 20px;}
 #easy_menu ul {display: grid; grid-template-columns: repeat(2,1fr); justify-items: stretch; align-items: center; gap: 8px;}
 #easy_menu ul li {background-color: #f5f6f8; border-radius: 12px;}
@@ -41,3 +42,7 @@
 #detail-info ul li {position: relative;}
 #detail-info ul li a {padding: 10px 20px; display: block; width: 100%; height: 100%; font-size: 18px; color: #333; font-weight: 400; line-height: 28px; letter-spacing: -0.36px;}
 #detail-info ul li a::before {content: ''; width: 4px; height: 4px; border-radius: 50%; position: absolute; left: 4px; top: 22px; background-color: #ddd; display: block;}
+
+.menu-section .accordion .menu-button span,
+.menu-section .accordion__section .acc-tit,
+.menu-section .accordion__section>ul>li a {font-size: 18px;}

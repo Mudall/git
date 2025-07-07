@@ -68,6 +68,24 @@
     </section>
 
     <section class="menu-section">
+        <div class="acc-tab">
+            <div class="toggle">
+                <a class="on">열기</a>
+                <a class="off" hidden>닫기</a>
+            </div>
+            <ul>
+                <li class="active"><a>채용정보</a></li>
+                <li><a>취업지원</a></li>
+                <li><a>실업급여</a></li>
+                <li><a>직업 능력 개발</a></li>
+                <li><a>출산휴가·육아휴직</a></li>
+                <li><a>마이페이지</a></li>
+                <li><a>고객센터</a></li>
+                <li><a>이용안내</a></li>
+            </ul>
+        </div>
+        <div class="acc-dim" hidden></div>
+
         <details class="accordion">
             <summary class="menu-button"><span>채용정보</span></summary>
             <div class="accordion-content">
@@ -433,13 +451,7 @@
             </div>
         </details>
     </section>
-    <script>
-        document.querySelectorAll('details.accordion').forEach(el => {
-            el.setAttribute('open', true); // 초기 열림 상태 유지
-            el.addEventListener('toggle', () => {
-                if (!el.open) el.open = true; // 닫히려 하면 다시 열기
-            });
-        });
-    </script>
+    <script src="../../js/no-acc.js"></script>
+
 </body>
 </html>
