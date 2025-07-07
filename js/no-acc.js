@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // 스크롤 위치 조정: active li가 왼쪽에 붙도록
             accTab.scrollTo({
-                left: itemLeft,
+                left: itemLeft-20,
                 behavior: 'smooth'
             });
         }
