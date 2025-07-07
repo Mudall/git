@@ -42,7 +42,7 @@ header#header-type1 .pop_search {top: 52px; z-index: 9999;}
 .popup-s5 .search-result p span.result-count {color: var(--main-color); font-weight: 600; margin-left: 4px;}
 .popup-s5 .pop_search input {width: calc(100% - 68px);}
 .popup-s5 .popup_ul {padding: 0 20px 96px 36px;}
-.popup-s5 .popup_ul li {padding: 10px 0; color: #333; }
-.popup-s5 .popup_ul li a {width: 100%; height: 100%; display: block;}
+.popup-s5 .popup_ul li { color: #333; }
+.popup-s5 .popup_ul li a {width: 100%; height: 100%; display: block; padding: 10px 0;}
 .popup-s5 .popup_ul li[hidden] {display: none;}
 .popup-s5 .span_search {color: #e0024b; font-weight: 600;}
