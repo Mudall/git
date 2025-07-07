@@ -38,6 +38,7 @@
   font-family: 'Pretendard' !important;
   font-style: normal;
   letter-spacing: -0.4px;
+  -webkit-text-size-adjust:none;
 }
 
 
