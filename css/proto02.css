@@ -24,3 +24,9 @@
 .toggle a.off::after {background: url('../image/acc-off.svg') no-repeat center / contain;}
 .toggle a[hidden] {display: none;}
 
+
+
+.scroll-lock {
+    overflow: hidden;
+    margin-top: 0 !important;
+}
