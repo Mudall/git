@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../../css/easy01.css" />
+
+
+    <title>로그인 전 화면</title>
+</head>
+<body>
+    <header>
+        <div class="logo-wrap">
+            <div class="logo">고용24</div>
+            <div class="tab-switch">
+                <button class="active">개인</button>
+                <button>기업</button>
+            </div>
+        </div>
+        <button class="close" aria-label="전체메뉴 닫기">닫기</button>
+    </header>
+
+
+    <section class="user-info">
+        <div class="login">
+            <a href="../easy01/new_1-3.html">로그인을 해주세요</a>
+
+            <div class="slideBtn-wrap">
+                <button><a href="../easy01/new_1-1.html"><p>기본</p></a></button>
+                <button class="active"><a href=""><p>간편</p></a></button>
+            </div>
+        </div>
+        <div class="logout" style="display: none;">
+            <p>김고용님</p>
+            <a>로그아웃</a>
+        </div>
+    </section>
+
+    <style>
+        .login {display: flex; justify-content: space-between;}
+        .login button a::after {display: none;}
+        .slideBtn-wrap {background-color: #eee; border-radius: 9999px; display: flex; gap: 0;}
+        .slideBtn-wrap button {background-color: #eee; border-radius: 9999px; }
+        .slideBtn-wrap button a {padding: 4px 12px !important; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
+        .slideBtn-wrap button a p {font-size: 14px; text-align: center; font-weight: 600; color: #555; line-height: 24px; letter-spacing: -0.28px;}
+        .slideBtn-wrap button.active {background-color: #24A960;}
+        .slideBtn-wrap button.active a p {color: #fff;}
+    </style>
+
+    <section id="easy_menu">
+        <ul>
+            <li><a>취업특강 <br>(1차 실업 인정교육 포함)</a></li>
+            <li><a>육아휴직 급여 신청</a></li>
+            <li><a>구직신청</a></li>
+            <li><a href="../easy01/s3.html">실업인정 인터넷 신청</a></li>
+            <li><a>구직촉진수당 신청</a></li>
+            <li><a>국민내일배움카드 발급신청</a></li>
+            <li><a>수급자격 신청자 온라인 교육</a></li>
+            <li><a>잡케어(직업추천, 경력관리)</a></li>
+            <li><a>출산전후 휴가 급여 신청</a></li>
+            <li><a>고용허가제 신고</a></li>
+        </ul>
+    </section>
+
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
