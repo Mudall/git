@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="../../css/layout.css" />
     <link rel="stylesheet" href="../../css/easy03.css" />
 
-
-    <title>로그인 전 화면</title>
+    <title>로그인 후 화면</title>
 </head>
 <body>
     <header>
@@ -26,24 +25,23 @@
 
 
     <section class="user-info">
-        <div class="login">
-            <a href="../easy03/new_3-3.html">로그인을 해주세요</a>
+        <div class="login" style="display: none;">
+            <a>로그인을 해주세요</a>
         </div>
-        <div class="logout" style="display: none;">
+        <div class="logout">
             <p>김고용님</p>
-            <a>로그아웃</a>
+            <a href="../easy03/new_3-2.html">로그아웃</a>
         </div>
-
         <ul class="icon-menu">
             <li>   
                 <a>
                     <!-- login 일때 -->
-                    <div class="ico"><img src="../../image/ico24_join.svg"></div>
-                    <p>회원가입</p>
+                    <!-- <div class="ico"><img src="../../image/ico24_join.svg"></div>
+                    <p>회원가입</p> -->
 
                     <!-- logout 일때 -->
-                    <!-- <div class="ico"><img src="../../image/ico24_mypage.svg"></div>
-                    <p>마이페이지</p> -->
+                    <div class="ico"><img src="../../image/ico24_mypage.svg"></div>
+                    <p>마이페이지</p>
                 </a>
             </li>
             <li>               
@@ -53,7 +51,7 @@
                 </a>
             </li>
             <li>   
-                <a>
+                <a href="../easy03/s3.html">
                     <div class="ico"><img src="../../image/ico24_question.svg"></div>
                     <p>이용가이드</p>
                 </a>
@@ -66,8 +64,7 @@
             </li>
         </ul>
     </section>
-
-
+    
     <section class="menu-section">
         <div class="btn_index">
             <div class="tit"><p>전체 메뉴</p></div>
@@ -78,7 +75,7 @@
             <summary class="menu-button"><span>채용정보</span></summary>
             <div class="accordion-content">
                 <div class="accordion__section">
-                    <a class="acc-tit" >일자리 찾기</a>
+                    <a class="acc-tit">일자리 찾기</a>
                     <ul class="acc-ul">
                         <li><a>채용정보 상세검색</a></li>
                         <li><a>직종별</a></li>
@@ -91,14 +88,14 @@
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >구직신청</a>
+                    <a class="acc-tit">구직신청</a>
                     <ul class="acc-ul">
                         <li><a>구직신청</a></li>
                         <li><a>이력서/자기소개서 관리</a></li>
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >채용행사</a>
+                    <a class="acc-tit">채용행사</a>
                     <ul class="acc-ul">
                         <li><a>채용행사</a></li>
                         <li><a>채용박람회</a></li>
@@ -111,7 +108,7 @@
             <summary class="menu-button"><span>취업지원</span></summary>
             <div class="accordion-content">
                 <div class="accordion__section">
-                    <a class="acc-tit" >취업역량강화</a>
+                    <a class="acc-tit">취업역량강화</a>
                     <ul class="acc-ul">
                         <li><a>구직자취업역량 강화프로그램</a></li>
                         <li><a>중장년내일센터</a></li>
@@ -123,20 +120,20 @@
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit">취업가이드</a>
+                    <a class="acc-tit" href="../easy03/s3.html">취업가이드</a>
                     <ul class="acc-ul">
                         <li><a>자소서 작성가이드</a></li>
                         <li><a>직무별 자소서 작성가이드</a></li>
                         <li><a>직업심리검사</a></li>
                         <li class="li_link"><a>사이버진로교육센터</a></li>
-                        <li><a>취업동향 모아보기</a></li>
+                        <li><a href="../easy03/s3.html">취업동향 모아보기</a></li>
                         <li><a>취업뉴스</a></li>
                         <li class="li_link"><a>직업정보</a></li>
                         <li class="li_link"><a>학과정보</a></li>
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >국민취업지원제도</a>
+                    <a class="acc-tit">국민취업지원제도</a>
                     <ul class="acc-ul">
                         <li><a>국취이야기</a></li>
                         <li><a>취업지원신청</a></li>
@@ -148,7 +145,7 @@
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >취업지원금</a>
+                    <a class="acc-tit">취업지원금</a>
                     <ul class="acc-ul">
                         <li><a>청년내일채움공제 운영기관</a></li>
                     </ul>
@@ -158,8 +155,8 @@
         <details class="accordion">
             <summary class="menu-button"><span>실업급여</span></summary>
             <div class="accordion-content">
-                <div class="accordion__section">
-                    <a class="acc-tit" >수급자격</a>
+                <div class="accordion__section"> 
+                    <a class="acc-tit">수급자격</a>
                     <ul class="acc-ul">
                         <li><a>수급자격 신청자 온라인 교육</a></li>
                         <li><a>수급자격 신청자 인터넷 제출</a></li>
@@ -170,7 +167,7 @@
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >실업인정</a>
+                    <a class="acc-tit">실업인정</a>
                     <ul class="acc-ul">
                         <li><a>온라인 취업드림수첩 조회</a></li>
                         <li><a href="../easy03/s3.html">실업인정 인터넷 신청</a></li>
@@ -182,7 +179,7 @@
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >취업촉진수당</a>
+                    <a class="acc-tit">취업촉진수당</a>
                     <ul class="acc-ul">
                         <li><a>조기재취업수당 청구</a></li>
                         <li><a>이주비 청구</a></li>
@@ -190,7 +187,7 @@
                     </ul>
                 </div>
                 <div class="accordion__section ul-none">
-                    <a class="acc-tit" >이직확인서</a>
+                    <a class="acc-tit">이직확인서</a>
                 </div>
             </div>
         </details>
@@ -198,7 +195,7 @@
             <summary class="menu-button"><span>직업 능력 개발</span></summary>
             <div class="accordion-content">
                 <div class="accordion__section">
-                    <a class="acc-tit" >훈련 찾기·신청</a>
+                    <a class="acc-tit">훈련 찾기·신청</a>
                     <ul class="acc-ul">
                         <li><a>훈련 통합검색</a></li>
                         <li><a>국민내일배움카드 훈련과정</a></li>
@@ -212,7 +209,7 @@
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >국민내일배움카드</a>
+                    <a class="acc-tit">국민내일배움카드</a>
                     <ul class="acc-ul">
                         <li><a>발급 신청</a></li>
                         <li><a>지원대상 및 휴직기간변경</a></li>
@@ -220,7 +217,7 @@
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >훈련 기관·강사</a>
+                    <a class="acc-tit">훈련 기관·강사</a>
                     <ul class="acc-ul">
                         <li><a>훈련교사관리</a></li>
                     </ul>
@@ -231,7 +228,7 @@
             <summary class="menu-button"><span>출산 휴가 · 육아 휴직</span></summary>
             <div class="accordion-content">
                 <div class="accordion__section">
-                    <a class="acc-tit" >출산휴가</a>
+                    <a class="acc-tit">출산휴가</a>
                     <ul class="acc-ul">
                         <li><a>출산전후(유산,사산,배우자,난임치료)휴가 급여신청</a></li>
                         <li><a>기간제·파견근로자 출산전후휴가 급여등에 상당하는 금액 신청</a></li>
@@ -240,7 +237,7 @@
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >육아휴직</a>
+                    <a class="acc-tit">육아휴직</a>
                     <ul class="acc-ul">
                         <li><a>육아휴직급여 신청</a></li>
                         <li><a>육아기 근로시간 단축 급여 신청</a></li>
@@ -254,10 +251,10 @@
             <summary class="menu-button"><span>마이페이지</span></summary>
             <div class="accordion-content">
                 <div class="accordion__section ul-none">
-                    <a class="acc-tit" >마이페이지</a>
+                    <a class="acc-tit">마이페이지</a>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >회원정보관리</a>
+                    <a class="acc-tit">회원정보관리</a>
                     <ul class="acc-ul">
                         <li><a>개인회원 정보 수정</a></li>
                         <li><a>개인회원 성명 변경</a></li>
@@ -268,7 +265,7 @@
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >맞춤정보</a>
+                    <a class="acc-tit">맞춤정보</a>
                     <ul class="acc-ul">
                         <li><a>맞춤채용정보</a></li>
                         <li><a>AI추천정보</a></li>
@@ -276,24 +273,24 @@
                     </ul>
                 </div>
                 <div class="accordion__section ul-none">
-                    <a class="acc-tit" >잡케어</a>
+                    <a class="acc-tit">잡케어</a>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >민원신청 현황</a>
+                    <a class="acc-tit">민원신청 현황</a>
                     <ul class="acc-ul">
                         <li><a>민원신청 현황조회</a></li>
                         <li><a>민원처리 알림</a></li>
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >서비스이력</a>
+                    <a class="acc-tit">서비스이력</a>
                     <ul class="acc-ul">
                         <li><a>서비스 수혜이력조회</a></li>
                         <li><a>증명서 발급 신청</a></li>
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >구직관리</a>
+                    <a class="acc-tit">구직관리</a>
                     <ul class="acc-ul">
                         <li><a>이력서/자기소개서 관리</a></li>
                         <li><a>알선/입사지원 내역</a></li>
@@ -301,7 +298,7 @@
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >훈련관리</a>
+                    <a class="acc-tit">훈련관리</a>
                     <ul class="acc-ul">
                         <li><a>국민내일배움카드</a></li>
                         <li><a>내일배움카드 (20년 이전)</a></li>
@@ -313,7 +310,7 @@
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >참여 프로그램 관리</a>
+                    <a class="acc-tit">참여 프로그램 관리</a>
                     <ul class="acc-ul">
                         <li><a>구직자취업역량강화프로그램</a></li>
                         <li><a>청년도전지원사업</a></li>
@@ -329,7 +326,7 @@
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >상담내역</a>
+                    <a class="acc-tit">상담내역</a>
                     <ul class="acc-ul">
                         <li><a>나의 상담내역</a></li>
                         <li><a>훈련진단상담</a></li>
@@ -340,7 +337,7 @@
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >내 전자지갑</a>
+                    <a class="acc-tit">내 전자지갑</a>
                     <ul class="acc-ul">
                         <li><a>고용24 전자지갑</a></li>
                     </ul>
@@ -351,20 +348,20 @@
             <summary class="menu-button"><span>고객센터</span></summary>
             <div class="accordion-content">
                 <div class="accordion__section">
-                    <a class="acc-tit" >공지사항</a>
+                    <a class="acc-tit">공지사항</a>
                     <ul class="acc-ul">
                         <li><a>공지사항</a></li>
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >자료실</a>
+                    <a class="acc-tit">자료실</a>
                     <ul class="acc-ul">
                         <li><a>홍보자료실</a></li>
                         <li><a>서식자료실</a></li>
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >이용문의</a>
+                    <a class="acc-tit">이용문의</a>
                     <ul class="acc-ul">
                         <li><a>질문과 답변</a></li>
                         <li><a>자주하는 질문</a></li>
@@ -372,26 +369,26 @@
                     </ul>
                 </div>
                 <div class="accordion__section ul-none">
-                    <a class="acc-tit" >이벤트</a>
+                    <a class="acc-tit">이벤트</a>
                 </div>
                 <div class="accordion__section ul-none">
-                    <a class="acc-tit" >홍보배너</a>
+                    <a class="acc-tit">홍보배너</a>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >기관찾기</a>
+                    <a class="acc-tit">기관찾기</a>
                     <ul class="acc-ul">
                         <li><a>기관찾기</a></li>
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >심사/재심사청구</a>
+                    <a class="acc-tit">심사/재심사청구</a>
                     <ul class="acc-ul">
                         <li><a>심사 청구</a></li>
                         <li><a>재심사 청구</a></li>
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >부정행위 신고/신고포상금</a>
+                    <a class="acc-tit">부정행위 신고/신고포상금</a>
                     <ul class="acc-ul">
                         <li><a>부정행위신고</a></li>
                         <li><a>부정행위신고(익명/자진신고)</a></li>
@@ -399,7 +396,7 @@
                     </ul>
                 </div>
                 <div class="accordion__section ul-none">
-                    <a class="acc-tit" >거짓구인광고신고</a>
+                    <a class="acc-tit">거짓구인광고신고</a>
                 </div>
             </div>
         </details> 
@@ -407,7 +404,7 @@
             <summary class="menu-button"><span>이용안내</span></summary>
             <div class="accordion-content">
                 <div class="accordion__section">
-                    <a class="acc-tit" >정책/제도</a>
+                    <a class="acc-tit">정책/제도</a>
                     <ul class="acc-ul">
                         <li><a>고용정책</a></li>
                         <li><a>지원금 모의계산</a></li>
@@ -415,7 +412,7 @@
                     </ul>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >이용가이드</a>
+                    <a class="acc-tit">이용가이드</a>
                     <ul class="acc-ul">
                         <li><a>이용가이드</a></li>
                         <li><a>장애인 이용안내</a></li>
@@ -424,10 +421,10 @@
                     </ul>
                 </div>
                 <div class="accordion__section ul-none">
-                    <a class="acc-tit" >고용24 활용하기</a>
+                    <a class="acc-tit">고용24 활용하기</a>
                 </div>
                 <div class="accordion__section">
-                    <a class="acc-tit" >홈페이지 운영 정책</a>
+                    <a class="acc-tit">홈페이지 운영 정책</a>
                     <ul class="acc-ul">
                         <li><a>이용약관</a></li>
                         <li><a>개인정보처리방침</a></li>
@@ -439,6 +436,7 @@
             </div>
         </details>
     </section>
+
     <div class="floating-box"><a href="../easy03/new_3-1.html"><p>기본 모드</p></a></div>
 
 
